@@ -1,0 +1,180 @@
+/* Enable fluid smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header & Navigation */
+.gv-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(18, 18, 18, 0.95);
+    border-bottom: 2px solid #ff6a00; /* Geek Vape Neon Orange Accent */
+    padding: 20px 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.gv-logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.gv-logo span {
+    color: #ff6a00;
+}
+
+.gv-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.gv-navbar li {
+    margin-left: 30px;
+}
+
+.gv-navbar a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover and Active Link States */
+.gv-navbar a:hover, .gv-navbar .active-link {
+    color: #ff6a00;
+}
+
+/* Section Layouts */
+section {
+    padding: 120px 40px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Accent Bars */
+.orange-bar {
+    width: 60px;
+    height: 4px;
+    background-color: #ff6a00;
+    margin: 15px auto 40px auto;
+}
+
+/* Hero & About Section Layouts */
+.gv-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 1)), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1000') no-repeat center center/cover;
+    margin-top: 70px;
+}
+
+.gv-hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.gv-hero p, .gv-about p {
+    font-family: Arial, sans-serif;
+    color: #cccccc;
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.gv-about {
+    background-color: #1a1a1a;
+}
+
+/* Blog Layout Grid */
+.gv-blog-section {
+    background-color: #121212;
+}
+
+.gv-blog-section h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Individual Blog Cards */
+.blog-card {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    padding: 30px;
+    text-align: left;
+    border-radius: 6px;
+    position: relative;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff6a00; /* Orange glow effect on card hover */
+}
+
+.blog-badge {
+    background-color: #ff6a00;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.blog-card h3 {
+    font-size: 1.3rem;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.blog-card p {
+    font-family: Arial, sans-serif;
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #ff6a00;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.read-more:hover {
+    color: #ffffff;
+}

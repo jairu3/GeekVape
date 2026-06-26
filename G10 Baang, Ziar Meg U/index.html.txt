@@ -1,0 +1,12 @@
+<! DOCTYPE html>
+<html>
+        <head>
+                    <title>xxx.com</title>
+            </head>
+            <body> 
+                <h1>NAME : ZIAR MEG U. BAANG</h1>
+                <h2>SCHOOL : MFNHS</h2>
+                <h2>ADRESS: CAMP JMC, AGUSAN CANYON, MANOLO FORTICH, BUKIDNON</h2>
+                <p> pstingin panty.</p>
+            </body>
+</html>
